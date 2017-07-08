@@ -71,4 +71,37 @@ Python在显示只有1个元素的tuple时，也会加一个逗号,，以免你�
 
 
 
+###条件语句
+
+elif是else if的缩写
+
+这是因为input()返回的数据类型是str，str不能直接和整数比较，必须先把str转换成整数。Python提供了int()函数来完成这件事情
+
+
+
+###循环
+
+字符串之间用+号连接可以避免产生空格
+
+
+
+###使用dict和set
+
+dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。
+
+需要牢记的第一条就是dict的key必须是不可变对象
+
+一是通过in判断key是否存在：
+
+>>> 'Thomas' in d
+False
+二是通过dict提供的get方法，如果key不存在，可以返回None，或者自己指定的value：
+
+>>> d.get('Thomas')
+>>> d.get('Thomas', -1)
+-1
+注意：返回None的时候Python的交互式命令行不显示结果。
+
+
+在Python中，字符串、整数等都是不可变的，因此，可以放心地作为key。而list是可变的，就不能作为key
 
