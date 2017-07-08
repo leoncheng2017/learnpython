@@ -53,3 +53,22 @@ b'\xe4\xb8\xad\xe6\x96\x87'
 格式化：
 >>> 'Hi, %s, you have $%d.' % ('Michael', 1000000)
 'Hi, Michael, you have $1000000.'
+
+
+
+###使用list和tuple
+
+list是python的一种数据类型，是一种有序的集合
+
+tuple和list非常类似，但是tuple一旦初始化就不能修改
+
+要定义一个只有1个元素的tuple必须加一个逗号,，来消除歧义：
+
+>>> t = (1,)
+>>> t
+(1,)
+Python在显示只有1个元素的tuple时，也会加一个逗号,，以免你误解成数学计算意义上的括号。
+
+
+
+
