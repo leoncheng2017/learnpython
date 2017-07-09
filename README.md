@@ -105,3 +105,42 @@ False
 
 在Python中，字符串、整数等都是不可变的，因此，可以放心地作为key。而list是可变的，就不能作为key
 
+猜想：set是把list变为集合的工具
+
+dict是函数，上例的d是一个dict的名字
+
+
+
+###函数
+
+pass表示什么也不做
+
+positional argument的意思是位置参数
+
+如果你已经把my_abs()的函数定义保存为abstest.py文件了，那么，可以在该文件的当前目录下启动Python解释器，用from abstest import my_abs来导入my_abs()函数，注意abstest是文件名（不含.py扩展名）：
+
+函数体内部可以用return随时返回函数结果；
+
+函数执行完毕也没有return语句时，自动return None。
+
+函数可以同时返回多个值，但其实就是一个tuple。
+
+
+
+###函数的参数
+
+可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。
+
+定义位置参数def calc(numbers):
+传列表nums用calc(nums)
+定义可变参数def cal(*numbers):
+传列表nums用calc（×nums）
+可变参数的函数传列表list可以直接用calc(1,2,3,4)
+
+命名关键字参数必须传入参数名，这和位置参数不同。如果没有传入参数名，调用将报错
+但是输出的是赋值给参数名的内容
+而关键字参数输出的是 参数名-赋值给参数名内容 的dict
+这里的参数名好像只能用str
+
+
+
