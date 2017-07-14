@@ -178,4 +178,26 @@ b = t[1]
 创建L和g的区别仅在于最外层的[]和()，L是一个list，而g是一个generator。
 generator保存的是算法
 
-这就是定义generator的另一种方法。如果一个函数定义中包含yield关键字，那么这个函数就不再是一个普通函数，而是一个generator：
+法1：这就是定义generator的另一种方法。如果一个函数定义中包含yield关键字，那么这个函数就不再是一个普通函数，而是一个generator
+
+法2：要创建一个generator，有很多种方法。第二种方法很简单，只要把一个列表生成式的[]改成()，就创建了一个generator
+
+
+
+###迭代器：Iterator
+
+小结
+
+凡是可作用于for循环的对象都是Iterable类型；
+
+凡是可作用于next()函数的对象都是Iterator类型，它们表示一个惰性计算的序列；
+
+集合数据类型如list、dict、str等是Iterable但不是Iterator，不过可以通过iter()函数获得一个Iterator对象。
+
+Python的for循环本质上就是通过不断调用next()函数实现的
+
+
+
+###高阶函数
+
+把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式。
