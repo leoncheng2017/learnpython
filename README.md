@@ -235,6 +235,9 @@ Built-in Functions：内置函数
 如何在python交互环境中导入module，例如test
 在python交互环境中输入：
 import os
-os.chdir('C:\work')
+os.chdir('C:\\work')
 #这样就OK了 然后
 import test #就行
+
+作用域：
+类似_xxx和__xxx这样的函数或变量就是非公开的（private），不应该被直接引用，比如_abc，__abc等；
