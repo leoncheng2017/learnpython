@@ -216,3 +216,17 @@ a,b,c=[1,2,3]
 ###Decorator
 
 在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）
+
+
+###Module
+
+Built-in Functions：内置函数
+
+我们把很多函数分组，分别放到不同的文件里。
+在Python中，一个.py文件就称之为一个模块（Module）。
+
+请注意，每一个包目录下面都会有一个__init__.py的文件，这个文件是必须存在的，否则，Python就把这个目录当成普通目录，而不是一个包。__init__.py可以是空文件，也可以有Python代码，因为__init__.py本身就是一个模块，而它的模块名就是mycompany。
+
+
+当我们在命令行运行某个模块文件时，例如test.py，Python解释器把一个特殊变量__name__置为__main__,
+如何是导入test模块或者其他模块调用test模块，那么test模块中__name__不会被置为__main__
